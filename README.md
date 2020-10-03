@@ -1,2 +1,2 @@
 # RStudio_TeachingSample
-Teaching sample for passing the teaching exam to become a certified RStudio trainer 
+This is the teaching sample prepared by Yuqi as part of teaching exam to become a certified RStudio trainer

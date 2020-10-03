@@ -1,0 +1,619 @@
+pre, p, li, ul {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  color: #191970;
+}
+
+.hljs-github .hljs {
+  background-color: #e4e4e4;
+  border-color: blue;
+}
+
+p {
+  font-size: 26px;
+  margin-bottom: .5em;
+  margin-top: .5em;
+  line-height: 1.25em;
+}
+li {
+  font-size: 26px;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  line-height: 1.25em;
+}
+
+ul {
+  font-size: 26px;
+  margin-top: .25em;
+  margin-bottom: .25em;
+  line-height: 1.25em;
+}
+
+.remark-slide-content {
+  background-color: #FAFAFA;
+  border-top: 70px solid #0075e2;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 1.3em 2em 1em 2em
+}
+
+.title-slide .inverse .remark-slide-content {
+  background-color: #FAFAFA;
+}
+
+.inverse {
+  background-color: #0075e2;
+  text-shadow: none;
+}
+
+.remark-slide-content > h1 {
+  font-family: 'Georgia';
+  font-weight: normal;
+  font-size: 45px;
+  margin-top: -95px;
+  margin-left: -00px;
+  color: #FAFAFA;
+}
+
+.remark-slide-content > inverse {
+  width: 112px;
+  height: 47px;
+  border-bottom: 1px solid #0075e2;
+  position: absolute;
+}
+
+/* Removes colored bar from top of the slide resulting in a clear slide */
+.clear {
+  border-top: 0px solid #FAFAFA;
+}
+
+.remark-slide-content > h2, h3, h4 {
+  padding-top: -15px;
+  padding-bottom: 00px;
+  color: #191970;
+  text-shadow: none;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 00px;
+  margin-bottom: -10px;
+}
+
+.remark-slide-content > h2, .pull-left > h2, .pull-right > h2 {
+  font-size: 35px;
+}
+
+.remark-slide-content > h3, .remark-slide-content > h4,
+.pull-left > h3, .pull-left > h4, .pull-right > h3, .pull-right > h4 {
+  font-size: 30px;
+}
+
+/*.title-slide {
+  border-top: 0px solid #0075e2;
+  background-color: #FAFAFA;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("titleSlide.png");
+  background-size: cover;
+}
+*/
+.title-slide {
+  border-top: 0px solid #0075e2;
+  background-color: #FAFAFA;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.title-slide > h1  {
+  color: #191970;
+  font-size: 65px;
+  text-shadow: none;
+  font-weight: 600;
+  text-align: left;
+  padding-top: 100px;
+}
+.title-slide > h2  {
+  margin-top: -25px;
+  padding-bottom: -20px;
+  color: #ffffff;
+  text-shadow: none;
+  font-weight: 300;
+  font-size: 35px;
+  text-align: left;
+  padding-top: 0px;
+}
+.title-slide > h3  {
+  color: #ffffff;
+  text-shadow: none;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: left;
+  margin-left: 15px;
+  margin-bottom: -30px;
+}
+
+.title-slide > p  {
+  color: #ffffff;
+  text-shadow: none;
+  font-weight: 100;
+  text-align: left;
+}
+
+.title-slide > p strong {
+  color: #191970;
+  text-shadow: none;
+  font-weight: 400;
+  text-align: left;
+}
+.remark-slide-number {
+  font-family: 'Georgia';
+  line-height: 5px;
+  font-size: 9pt;
+  color: #272822;
+  opacity: 1;
+}
+.inverse .remark-slide-number {
+  font-family: 'Georgia';
+  line-height: 5px;
+  font-size: 9pt;
+  color: #FAFAFA;
+  opacity: 1;
+}
+
+/* turns off slide numbers for title page: https://github.com/gnab/remark/issues/298 */
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+/* turns off slide numbers for title page: https://github.com/gnab/remark/issues/298 */
+.section-slide .remark-slide-number {
+  display: none;
+}
+
+
+.remark-inline-code {
+  /* background: #F5F5F5; /* lighter */
+  background: #f1f1f1; /* darker */
+  border-radius: 3px;
+  color: #0075e2;
+  padding: 4px;
+}
+
+.code80 .remark-code {
+  font-size: 100%;
+}
+
+.code100 .remark-code {
+  font-size: 16pt;
+}
+
+.code150 .remark-code {
+  font-size: 22pt;
+}
+
+.remark-code {
+  font-size: 15pt;
+}
+
+/*remark-code:not(*hljs) {
+  font-size: 10pt;
+}
+*/
+
+.codeScroll8 {
+  margin: 0 0 0 0px;
+  height: 8pc;
+  overflow-y: scroll;
+  background-color: #f1f1f1;
+}
+
+.codeScroll10 {
+  margin: 0 0 0 0px;
+  height: 10pc;
+  overflow-y: scroll;
+  background-color: #f1f1f1;
+}
+
+.codeScroll15 {
+  margin: 0 0 0 0px;
+  height: 15pc;
+  overflow-y: scroll;
+  background-color: #f1f1f1;
+}
+
+
+.codeScroll20 {
+  margin: 0 0 0 0px;
+  height: 20pc;
+  overflow-y: scroll;
+  background-color: #f1f1f1;
+}
+
+.codeScroll25 {
+  margin: 0 0 0 0px;
+  height: 25pc;
+  overflow-y: scroll;
+  background-color: #f1f1f1;
+}
+
+a, a > code {
+  color: rgb(249, 38, 114);
+  text-decoration: none;
+}
+
+pre, pre > code {
+  background-color:#f1f1f1;
+  text-decoration: none;
+  white-space: pre-wrap;
+}
+
+pre, pre > .remark-code:not(.r) {
+  font-size: 85%;
+  text-decoration: none;
+}
+
+.footnote {
+  position: absolute;
+  bottom: 3em;
+  padding-right: 4em;
+  font-size: 90%;
+}
+
+.remark-code-line {
+  font-size: 90%;
+}
+
+.remark-code-line-highlighted { 
+  background-color: #ffff88;
+}
+
+.inverse {
+  background-color: #0075e2;
+}
+
+.inverse h1, .inverse h2, .inverse h3, .inverse h4 {
+  font-family: "Georgia"
+}
+
+/* Two-column layout */
+.left-column {
+  color: #777;
+  width: 20%;
+  height: 92%;
+  float: left;
+}
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #000;
+}
+.right-column {
+  width: 75%;
+  float: right;
+  padding-top: 1em;
+}
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.pull-right ~ * {
+  clear: both;
+}
+img, video, iframe {
+  max-width: 100%;
+}
+blockquote {
+  border-left: solid 5px lightgray;
+  padding-left: 1em;
+}
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee }
+
+@page { margin: 0; }
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+
+
+
+/* latin */
+/*@font-face {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Georgia'), local('DroidSerif'), url(https://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaJ0EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Georgia Bold'), local('DroidSerif-Bold'), url(https://fonts.gstatic.com/s/droidserif/v6/QQt14e8dY39u-eYBZmppwZ_TkvowlIOtbR7ePgFOpF4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Georgia';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Georgia Italic'), local('DroidSerif-Italic'), url(https://fonts.gstatic.com/s/droidserif/v6/cj2hUnSRBhwmSPr9kS589-LrC4Du4e_yfTJ8Ol60xk0.ttf) format('truetype');
+}*/
+/* latin */
+/*@font-face {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Georgia'), local('SourceCodePro-Regular'), url(https://fonts.gstatic.com/s/sourcecodepro/v7/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevW.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+*/
+
+
+.section-slide {
+  border-top: 0px solid white;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.section-slide > h1  {
+  color: #001871;
+  font-size: 100px;
+  line-height: 110px;
+  text-shadow: none;
+  font-weight: 600;
+  text-align: left;
+  padding-top: 90px;
+}
+
+hr {
+  margin-left: -40px;
+  border: 2px solid white;
+  position: absolute;
+  width: 100%;
+}
+
+hr.sectionSlide {
+  margin-left: -40px;
+  bottom: 182px;
+  border: none;
+  position: absolute;
+  width: 100%;
+}
+
+hr.remark-slide-content.section-slide:after {
+  display:none;
+}
+
+hr:after {
+  display:none;
+}
+
+.mjx-chtml{
+  font-size: 120% !important;
+}
+
+
+.logo img {
+  position: absolute;
+  bottom: 0px;
+  background-color: transparent;
+  z-index: 1;
+  right: 0px;
+  height: 74.5px; /*894, 64*/
+  width: 72.5px; /*870, 107*/
+}
+
+.logoSection img {
+  position: absolute;
+  padding:0; margin:0;
+  bottom: 40px;
+  background-color: transparent;
+  z-index: 1;
+  right: 30px;
+  height: 149px; /*894, 64*/
+  width: 145px; /*870, 107*/
+}
+
+.logoFit_50 img {
+  max-width: 55%;
+  max-height: 55%;
+}
+
+.logoFit_70_v1 img {
+  max-width: 70%;
+  max-height: 50%;
+}
+
+.logoFit_70_v2 img {
+  max-width: 74%;
+  max-height: 74%;
+  padding-left: 1%;
+}
+
+
+.remark-slide-content:after {
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 AMERICAN INSTITUTES FOR RESEARCH | AIR.ORG";
+    font-family: 'Georgia';
+    line-height: 25px;
+    font-size: 11.3pt;
+    color: #191970;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 25px;
+    width: 1210px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("presentationFigures/footerLine.png");
+}
+
+.title-slide.remark-slide-content:after {
+  display: none;
+}
+
+.section-slide.remark-slide-content:after {
+  display: none;
+}
+
+.logo img {
+  position: absolute;
+  bottom: 0px;
+  background-color: transparent;
+  z-index: 1;
+  right: 0px;
+  height: 55px;
+  width: 167px;
+}
+
+.remark-slide-content.inverse :after {
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 AMERICAN INSTITUTES FOR RESEARCH | AIR.ORG";
+    font-family: 'Georgia';
+    border-radius: 0px;
+    color: #191970;
+    border-color: transparent;
+    white-space: nowrap; 
+    background-color: #0075e2;
+    line-height: 25px;
+    font-size: 11.3pt;
+    font-weight: 300;
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+    height: 25px;
+    width: 910px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("presentationFigures/footerLine.png");
+}
+
+.section-slide {
+  border-top: 0px solid #0075e2;
+  background-color: #0075e2;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.section-slide > h1  {
+  color: white;
+  font-size: 100px;
+  text-shadow: none;
+  font-weight: 600;
+  text-align: left;
+  padding-top: 100px;
+}
+
+.remark-slide-content.section-slide :after {
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 AMERICAN INSTITUTES FOR RESEARCH | AIR.ORG";
+    font-family: 'Georgia';
+    border-radius: 0px;
+    color: white;
+    border-color: transparent;
+    white-space: nowrap; 
+    background-color: 0075e2;
+    line-height: 25px;
+    font-size: 11.3pt;
+    font-weight: 300;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 25px;
+    width: 1210px;
+}
+
+
+/* this section is used for the background images */
+.explainerA {
+  background-image: url("presentationFigures/explainerA.png");
+  background-size: 900px 506px;
+  background-color: white;
+}
+.explainerB {
+  background-image: url("presentationFigures/explainerB.png");
+  background-size: 900px 506px;
+  background-color: white;
+}
+.explainerC {
+  background-image: url("presentationFigures/explainerC.png");
+  background-size: 900px 506px;
+  background-color: white;
+}
+.explainerD {
+  background-image: url("presentationFigures/explainerD.png");
+  background-size: 900px 506px;
+  background-color: white;
+}
+
+
+/* this section is used for the background images */
+.EdSurvey1 {
+  background-image: url("presentationFigures/EdSurvey1.png");
+  background-size: 900px 380px;
+  background-color: white;
+}
+.EdSurvey2 {
+  background-image: url("presentationFigures/EdSurvey2.png");
+  background-size: 900px 380px;
+  background-color: white;
+}
+.EdSurvey3 {
+  background-image: url("presentationFigures/EdSurvey3.png");
+  background-size: 900px 380px;
+  background-color: white;
+}
+.EdSurvey4 {
+  background-image: url("presentationFigures/EdSurvey4.png");
+  background-size: 900px 380px;
+  background-color: white;
+}
+
+/* this section is used for slides with too many contents */
+.CrowdedSlide {
+  line-height: 1;
+}
+
+.CrowdedSlide2 {
+  line-height: 1.1;
+  font-size: 90%;
+}
+
+
+.left-text {
+  width: 25%;
+  height: 92%;
+  float: left;
+}
+
+
+.right-code {
+  width: 74%;
+  float: right;
+  /* border-left: solid 1px #272822; */
+  padding-left: 1%;
+  line-height: 0.9;
+
+}
+
+.right-code-scroll35 {
+  width: 74%;
+  height: 35pc;
+  float: right;
+  /* border-left: solid 1px #272822; */
+  padding-left: 1%;
+  line-height: 0.9;
+  overflow-y: scroll;
+  
+}
