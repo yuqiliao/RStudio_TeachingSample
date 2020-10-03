@@ -31,7 +31,7 @@ ul {
 
 .remark-slide-content {
   background-color: #FAFAFA;
-  border-top: 70px solid #0075e2;
+  border-top: 70px solid #75aadb;
   font-family: "Open Sans";
   font-size: 20px;
   font-weight: 300;
@@ -44,7 +44,7 @@ ul {
 }
 
 .inverse {
-  background-color: #0075e2;
+  background-color: #75aadb;
   text-shadow: none;
 }
 
@@ -60,7 +60,7 @@ ul {
 .remark-slide-content > inverse {
   width: 112px;
   height: 47px;
-  border-bottom: 1px solid #0075e2;
+  border-bottom: 1px solid #75aadb;
   position: absolute;
 }
 
@@ -90,7 +90,7 @@ ul {
 }
 
 /*.title-slide {
-  border-top: 0px solid #0075e2;
+  border-top: 0px solid #75aadb;
   background-color: #FAFAFA;
   background-repeat: no-repeat;
   background-size: contain;
@@ -99,7 +99,7 @@ ul {
 }
 */
 .title-slide {
-  border-top: 0px solid #0075e2;
+  border-top: 0px solid #75aadb;
   background-color: #FAFAFA;
   background-repeat: no-repeat;
   background-size: contain;
@@ -176,7 +176,7 @@ ul {
   /* background: #F5F5F5; /* lighter */
   background: #f1f1f1; /* darker */
   border-radius: 3px;
-  color: #0075e2;
+  color: #75aadb;
   padding: 4px;
 }
 
@@ -269,7 +269,7 @@ pre, pre > .remark-code:not(.r) {
 }
 
 .inverse {
-  background-color: #0075e2;
+  background-color: #75aadb;
 }
 
 .inverse h1, .inverse h2, .inverse h3, .inverse h4 {
@@ -446,7 +446,7 @@ hr:after {
 
 
 .remark-slide-content:after {
-    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 AMERICAN INSTITUTES FOR RESEARCH | AIR.ORG";
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 RStudio.com";
     font-family: 'Georgia';
     line-height: 25px;
     font-size: 11.3pt;
@@ -458,7 +458,7 @@ hr:after {
     width: 1210px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("presentationFigures/footerLine.png");
+    background-image: url("presentationFigures/greyLine.png");
 }
 
 .title-slide.remark-slide-content:after {
@@ -480,13 +480,13 @@ hr:after {
 }
 
 .remark-slide-content.inverse :after {
-    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 AMERICAN INSTITUTES FOR RESEARCH | AIR.ORG";
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 RStudio.com";
     font-family: 'Georgia';
     border-radius: 0px;
     color: #191970;
     border-color: transparent;
     white-space: nowrap; 
-    background-color: #0075e2;
+    background-color: #75aadb;
     line-height: 25px;
     font-size: 11.3pt;
     font-weight: 300;
@@ -497,12 +497,12 @@ hr:after {
     width: 910px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("presentationFigures/footerLine.png");
+    background-image: url("presentationFigures/greyLine.png");
 }
 
 .section-slide {
-  border-top: 0px solid #0075e2;
-  background-color: #0075e2;
+  border-top: 0px solid #75aadb;
+  background-color: #75aadb;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -517,7 +517,7 @@ hr:after {
 }
 
 .remark-slide-content.section-slide :after {
-    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 AMERICAN INSTITUTES FOR RESEARCH | AIR.ORG";
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 RStudio.com";
     font-family: 'Georgia';
     border-radius: 0px;
     color: white;
@@ -535,50 +535,6 @@ hr:after {
 }
 
 
-/* this section is used for the background images */
-.explainerA {
-  background-image: url("presentationFigures/explainerA.png");
-  background-size: 900px 506px;
-  background-color: white;
-}
-.explainerB {
-  background-image: url("presentationFigures/explainerB.png");
-  background-size: 900px 506px;
-  background-color: white;
-}
-.explainerC {
-  background-image: url("presentationFigures/explainerC.png");
-  background-size: 900px 506px;
-  background-color: white;
-}
-.explainerD {
-  background-image: url("presentationFigures/explainerD.png");
-  background-size: 900px 506px;
-  background-color: white;
-}
-
-
-/* this section is used for the background images */
-.EdSurvey1 {
-  background-image: url("presentationFigures/EdSurvey1.png");
-  background-size: 900px 380px;
-  background-color: white;
-}
-.EdSurvey2 {
-  background-image: url("presentationFigures/EdSurvey2.png");
-  background-size: 900px 380px;
-  background-color: white;
-}
-.EdSurvey3 {
-  background-image: url("presentationFigures/EdSurvey3.png");
-  background-size: 900px 380px;
-  background-color: white;
-}
-.EdSurvey4 {
-  background-image: url("presentationFigures/EdSurvey4.png");
-  background-size: 900px 380px;
-  background-color: white;
-}
 
 /* this section is used for slides with too many contents */
 .CrowdedSlide {

@@ -35,8 +35,8 @@ yuqi.liao@georgetown.edu
 _October 2020_
 
 .logo[
-```{r airLogo, echo=FALSE, out.width='80%', out.height='80%'}
-knitr::include_graphics('presentationFigures/airLogo.png')
+```{r logo, echo=FALSE, out.width='80%', out.height='80%'}
+knitr::include_graphics('presentationFigures/RStudio-Logo-White.png')
 ```
 ]
 
@@ -49,8 +49,6 @@ Outline
   - Overall steps
     - easier approach (`gganimate`)
     - more customized approach (`tweenr` + `animation`)
-  - Quiz
-  - More resources for creating animated visualizations
 
 
 ---
@@ -253,9 +251,7 @@ Case Study - step 1
 .right-code-scroll35[
 ```{r process epirls4, message=FALSE, eval=TRUE, echo = TRUE, warning=FALSE, results = "markup", cache = TRUE}
 #read in pre-processed data file
-df <- readRDS(paste0(getwd(), "/ePIRLSProcessedDataFrame.rds"))
-df <- df %>% filter(Country %in% c("Singapore", "Canada", "United States", "Portugal"))
-df <- df %>% select(Country, Level, Percent)
+df <- readRDS(paste0(getwd(), "/ePIRLSProcessedDataFrameSelectedCountries.rds"))
 #inspect `df`
 df
 ```
@@ -490,8 +486,6 @@ outputPath <- "Your output path"
 # export the animation
 anim_save(filename = "epirls_gganimate.gif", animation = anim_endpause, path = outputPath)
 ```
-
-![](presentationFigures/epirls_tweenr.gif)
 ]
 
 ---
@@ -708,8 +702,28 @@ Case Study - step 3.2 (`animation`)
 ![](presentationFigures/epirls_tweenr.gif)
 ]
 
+
 ---
-More resources - GIF compression
+Recap - Overall steps
+========================================================
+
+1. Import and process data into tidy format
+2. Create a static plot (usually the last frame)
+3. Make it move!
+  - 3.1. Interpolate data by frame
+  - 3.2. Draw, append, and export each frame
+
+---
+
+Reach out
+========================================================
+
+- Yuqi Liao
+- yuqi.liao@georgetown.edu
+- [@yuqiliao](https://twitter.com/yuqiliao)
+
+---
+Bonus content: GIF compression
 ========================================================
 
 .left-text[
@@ -744,24 +758,4 @@ gif_compress(ingif = "Path/to/the/input/gif/file/timss_tweenr.gif",
 
 <br>
 These tools listed to the left can also be used to make animated GIFs from scratch (appending frames together)
-
-
----
-Recap - Overall steps
-========================================================
-
-1. Import and process data into tidy format
-2. Create a static plot (usually the last frame)
-3. Make it move!
-  - 3.1. Interpolate data by frame
-  - 3.2. Draw, append, and export each frame
-
----
-
-Reach out
-========================================================
-
-- Yuqi Liao
-- yliao@air.org
-- [@yuqiliao](https://twitter.com/yuqiliao)
 
