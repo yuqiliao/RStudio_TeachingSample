@@ -44,73 +44,23 @@ knitr::include_graphics('presentationFigures/RStudio-Logo-White.png')
 
 Outline
 ========================================================
-- Why animated visualizations?
 - How to create animated visualizations?
   - Overall steps
-    - Easier approach (`gganimate`, today)
-    - Customized approach (`tweenr` + `animation`, next lesson)
+  - Easier approach (`gganimate`)
+  - Customized approach (`tweenr` + `animation`, next lesson)
+- When to create animated visualizations? (next lesson)
 
-
----
-class: inverse, section-slide
-
-Why animated visualizations?
-========================================================
-
----
-Why animated visualizations?
-========================================================
 .pull-left[
-
-## Pros
-
--	Allows visualization in multiple dimensions
-
+```{r ex1, echo=FALSE, out.width=350, out.height=250}
+knitr::include_graphics('presentationFigures/epirls_gganimate_c.gif')
+```
 ]
-
 .pull-right[
-![](presentationFigures/HansRoslingGIF.gif)
+```{r ex2, echo=FALSE, out.width=350, out.height=250}
+knitr::include_graphics('presentationFigures/epirls_tweenr_c.gif')
+```
 ]
 
----
-Why animated visualizations?
-========================================================
-.pull-left[
-
-## Pros
-
--	Allows visualization in multiple dimensions
--	It moves - capturing/guiding viewer attention
-
-]
-
-.pull-right[
-
-![](presentationFigures/epirlsTweetOriginal_c.gif)
-
-]
-
----
-Why animated visualizations? Or not...
-========================================================
-.pull-left[
-
-## Pros
-
--	Allows visualization in multiple dimensions
--	It moves - capturing/guiding viewer attention
-
-]
-
-.pull-right[
-
-## Cons
-
--	Allows visualization in multiple dimensions
-- It moves - potentially distracting
--	Not explorable
-
-]
 
 ---
 class: inverse, section-slide
@@ -200,8 +150,15 @@ How? - Case Study
 ========================================================
 - Partly recreate the [animated visualization using ePIRLS data](https://twitter.com/EdNCES/status/1112751987853021187)
 
-.logoFit_50[
-![](presentationFigures/epirlsTweetOriginal_c.gif)
+.pull-left[
+```{r ex3, echo=FALSE, out.width=350, out.height=250}
+knitr::include_graphics('presentationFigures/epirls_gganimate_c.gif')
+```
+]
+.pull-right[
+```{r ex4, echo=FALSE, out.width=350, out.height=250}
+knitr::include_graphics('presentationFigures/epirls_tweenr_c.gif')
+```
 ]
 
 .logoSection[
@@ -362,10 +319,21 @@ basePlot +
 ```
 <span>a. Level   </span><span>b. Percent   </span><span>c. Country   </span><span>d. df</span>
 
+.pull-left[
 ```{r gganimate2-1, message=FALSE, eval=TRUE, echo = FALSE, warning=FALSE, results = "markup", cache = TRUE, out.height= 330}
-knitr::include_graphics("presentationFigures/epirls_gganimate_test.gif")
+knitr::include_graphics("presentationFigures/epirls_gganimate_test_c.gif")
 ```
 ]
+
+.pull-right[
+```{r dataframe2-1, echo=TRUE, eval = TRUE, results = "markup"}
+df
+```
+]
+
+]
+
+
 
 ---
 Case Study - step 3 (`gganimate`)
@@ -388,11 +356,21 @@ basePlot +
 ```
 <span style="color:#f54886; font-weight: bold">a. Level   </span><span>b. Percent   </span><span>c. Country   </span><span>d. df</span>
 
-
+.pull-left[
 ```{r gganimate3-1, message=FALSE, eval=TRUE, echo = FALSE, warning=FALSE, results = "markup", cache = TRUE, out.height= 330}
-knitr::include_graphics("presentationFigures/epirls_gganimate_test.gif")
+knitr::include_graphics("presentationFigures/epirls_gganimate_test_c.gif")
 ```
 ]
+
+.pull-right[
+```{r dataframe3-1, echo=TRUE, eval = TRUE, results = "markup"}
+df
+```
+]
+
+]
+
+
 ---
 Case Study - step 3 (`gganimate`)
 ========================================================
@@ -429,7 +407,7 @@ Case Study - step 3 (`gganimate`)
 
 .right-code-scroll35[
 Explore further on `transition_states()`.
-What happens if `states = Percent`? 
+What happens if `states = Percent`?
 <br>
 `gganimate` does not yet support revealing each level of a stacked bar plot
 ```{r gganimate6, message=FALSE, eval=TRUE, echo = TRUE, warning=FALSE, results = "markup", cache = TRUE, out.height= 330}
@@ -690,7 +668,7 @@ Case Study - step 3.2 (`animation`)
 ]
 
 .logoFit_70_v2[
-![](presentationFigures/epirls_tweenr.gif)
+![](presentationFigures/epirls_tweenr_c.gif)
 ]
 
 
@@ -731,4 +709,65 @@ gif_compress(ingif = "Path/to/the/input/gif/file/timss_tweenr.gif",
 
 <br>
 These tools listed to the left can also be used to make animated GIFs from scratch (appending frames together)
+
+---
+class: inverse, section-slide
+
+When to create animated visualizations?
+========================================================
+
+---
+When to create animated visualizations?
+========================================================
+.pull-left[
+
+## Pros
+
+-	Allows visualization in multiple dimensions
+
+]
+
+.pull-right[
+![](presentationFigures/HansRoslingGIF_c.gif)
+]
+
+---
+When to create animated visualizations?
+========================================================
+.pull-left[
+
+## Pros
+
+-	Allows visualization in multiple dimensions
+-	It moves - capturing/guiding viewer attention
+
+]
+
+.pull-right[
+
+![](presentationFigures/epirlsTweetOriginal_c.gif)
+
+]
+
+---
+When to create animated visualizations? & When not to...
+========================================================
+.pull-left[
+
+## Pros
+
+-	Allows visualization in multiple dimensions
+-	It moves - capturing/guiding viewer attention
+
+]
+
+.pull-right[
+
+## Cons
+
+-	Allows visualization in multiple dimensions
+- It moves - potentially distracting
+-	Not explorable
+
+]
 
