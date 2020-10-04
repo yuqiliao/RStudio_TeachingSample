@@ -317,7 +317,7 @@ Case Study - step 3 (`gganimate`)
 ]
 
 ---
-Case Study - step 3.1&3.2 (`gganimate`)
+Case Study - step 3 (`gganimate`)
 ========================================================
 .left-text[
 <ol start = "0">
@@ -342,7 +342,7 @@ anim
 ]
 
 ---
-Case Study - step 3.1&3.2 (`gganimate`)
+Case Study - step 3 (`gganimate`)
 ========================================================
 .left-text[
 <ol start = "0">
@@ -368,7 +368,7 @@ knitr::include_graphics("presentationFigures/epirls_gganimate_test.gif")
 ]
 
 ---
-Case Study - step 3.1&3.2 (`gganimate`)
+Case Study - step 3 (`gganimate`)
 ========================================================
 .left-text[
 <ol start = "0">
@@ -384,17 +384,16 @@ Test your understanding of `transition_states()`.
 Setting `states` to which option below could produce the following animation?
 ```{r gganimate3, message=FALSE, eval=FALSE, echo = TRUE, warning=FALSE, results = "markup", cache = TRUE, out.height= 330}
 basePlot +
-  {{transition_states(states = ___)}}
+  {{transition_states(states = Level)}}
 ```
-<span style="color:pink; font-weight: bold">a. Level</span>  <span>b. Percent</span>  <span>c. Country</span>  <span>d. df</span>
+<span style="color:#f54886; font-weight: bold">a. Level</span>  <span>b. Percent</span>  <span>c. Country</span>  <span>d. df</span>
 
 ```{r gganimate3-1, message=FALSE, eval=TRUE, echo = FALSE, warning=FALSE, results = "markup", cache = TRUE, out.height= 330}
 knitr::include_graphics("presentationFigures/epirls_gganimate_test.gif")
 ```
 ]
 ---
----
-Case Study - step 3.1&3.2 (`gganimate`)
+Case Study - step 3 (`gganimate`)
 ========================================================
 .left-text[
 <ol start = "0">
@@ -412,10 +411,11 @@ What happens if `states = Percent`?
 basePlot +
   {{transition_states(states = Percent)}}
 ```
+![](presentationFigures/liveCoding.gif)
 ]
 
 ---
-Case Study - step 3.1&3.2 (`gganimate`)
+Case Study - step 3 (`gganimate`)
 ========================================================
 .left-text[
 <ol start = "0">
@@ -428,11 +428,11 @@ Case Study - step 3.1&3.2 (`gganimate`)
 
 .right-code-scroll35[
 Explore further on `transition_states()`.
-What happens if `states = Percent`?
+What happens if `states = Percent`? 
+<br>
 `gganimate` does not yet support revealing each level of a stacked bar plot
 ```{r gganimate6, message=FALSE, eval=TRUE, echo = TRUE, warning=FALSE, results = "markup", cache = TRUE, out.height= 330}
 experiment <- basePlot +
-  # try `states = Percent`
   transition_states(states = Percent)
 experiment
 ```

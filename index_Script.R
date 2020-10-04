@@ -60,13 +60,12 @@ basePlot +
   {{transition_states(states = ___)}}	
 ############################################### Slide 24	
 basePlot +	
-  {{transition_states(states = ___)}}	
+  {{transition_states(states = Level)}}	
 ############################################### Slide 25	
 basePlot +	
   {{transition_states(states = Percent)}}	
 ############################################### Slide 26	
 experiment <- basePlot +	
-  # try `states = Percent`	
   transition_states(states = Percent)	
 experiment	
 ############################################### Slide 27	
