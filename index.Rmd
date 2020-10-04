@@ -463,32 +463,6 @@ anim
 ```
 ]
 
----
-Case Study - step 3 (`gganimate`)
-========================================================
-.left-text[
-<ol start = "0">
-  <li>Set things up</li>
-  <li>Import and process data into tidy format</li>
-  <li>Create a static plot (usually the last frame)</li>
-  <li>Make it move</li>
-</ol>
-]
-
-.right-code-scroll35[
-```{r gganimate8, message=FALSE, eval=TRUE, echo = TRUE, warning=FALSE, results = "markup", cache = TRUE}
-# Create a gganimate object
-anim <- anim +
-  # specify the rate of change of values between frames (default to be `linear`)
-  {{ease_aes('cubic-in-out')}}
-```
-More information on [easing](https://easings.net/)
-
-```{r gganimate9, message=FALSE, eval=TRUE, echo = TRUE, warning=FALSE, results = "markup", cache = TRUE, out.height= 380}
-# View animation
-anim
-```
-]
 
 ---
 Case Study - step 3 (`gganimate`)

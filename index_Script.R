@@ -77,30 +77,23 @@ anim <- anim +
 # View animation	
 anim	
 ############################################### Slide 28	
-# Create a gganimate object	
-anim <- anim +	
-  # specify the rate of change of values between frames (default to be `linear`)	
-  {{ease_aes('cubic-in-out')}}	
-# View animation	
-anim	
-############################################### Slide 29	
 # use `animate` to achieve end pause	
 anim_endpause <-	
   {{animate(anim, nframes = 100, fps = 20, end_pause = 20, rewind = FALSE)}}	
 	
 # View animation	
 anim_endpause	
-############################################### Slide 30	
+############################################### Slide 29	
 # define output path	
 outputPath <- "Your output path"	
 	
 # export the animation	
 anim_save(filename = "epirls_gganimate.gif", animation = anim_endpause, path = outputPath)	
+############################################### Slide 30	
 ############################################### Slide 31	
 ############################################### Slide 32	
 ############################################### Slide 33	
 ############################################### Slide 34	
-############################################### Slide 35	
 # Create 6 data frames that stores the bar chart in 6 "stagies"	
 df1 <- df %>% mutate(Percent = 0, df_id = "1")	
 df2 <- df1 %>% mutate(Percent = ifelse(Level %in% c("Advanced"), df$Percent, df1$Percent), df_id = "2")	
@@ -114,13 +107,13 @@ ls <- list(df1, df2, df3, df4, df5, df6)
 	
 # Inspect `ls`	
 ls	
-############################################### Slide 36	
+############################################### Slide 35	
 # Use the `tween_states` function from the `tweenr` package to interpolate data in between each state/stage	
 tf <- tween_states(ls, tweenlength= 1, statelength=0, ease='cubic-in-out', nframes=100)	
 	
 # Inspect `tf`	
 tf	
-############################################### Slide 37	
+############################################### Slide 36	
 # define where we want the animation to "pause"	
 pause_frames <- c(21, 41, 61, 81, 100)	
 	
@@ -161,8 +154,8 @@ saveGIF({
 },	
 # specify the pathway and name of the gif output, as well as the interval, width, and height	
 movie.name = paste0(outputPath,"/epirls_tweenr.gif"), interval = .02, ani.width = 600, ani.height = 400)	
+############################################### Slide 37	
 ############################################### Slide 38	
-############################################### Slide 39	
 	
 # Define a function to compress any GIF file	
 # sourced from https://stla.github.io/stlapblog/posts/AnimatedGifs.html	
