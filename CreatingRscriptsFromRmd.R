@@ -61,5 +61,5 @@ rmd2rscript <- function(inFile, slideNumber = TRUE, removeSlideText = TRUE){
     close(flOut)
 }
 
-setwd("/Users/Yuqi/Desktop/Files/Learning:Online Classes/RStudio/Teaching exam/sample lesson/GIT/RStudio_TeachingSample")
-rmd2rscript("creatingAnimation.Rmd")
+setwd("/Users/teachingaccount/Desktop/GIT/RStudio_TeachingSample")
+rmd2rscript("index.Rmd")
