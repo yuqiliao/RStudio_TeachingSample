@@ -11,29 +11,25 @@
 ############################################### Slide 11	
 ############################################### Slide 12	
 ############################################### Slide 13	
-############################################### Slide 14	
-############################################### Slide 15	
-############################################### Slide 16	
-############################################### Slide 17	
 # load the required libraries	
 library(ggplot2)	
 library(gganimate)	
 library(tweenr)	
 library(animation)	
 library(dplyr)	
-############################################### Slide 18	
+############################################### Slide 14	
 #read in pre-processed data file	
 df <- readRDS(paste0(getwd(), "/ePIRLSProcessedDataFrameSelectedCountries.rds"))	
 #inspect `df`	
 df	
-############################################### Slide 19	
+############################################### Slide 15	
 # Define other plot aesthetics	
 cols <- c("#982F3A", "#B3B3B3", "#3D3629", "#BA8752", "#143875")	
 	
 plotCaption <- ("SOURCE: International Association for the Evaluation of Educational Achievement (IEA), \nProgress in International Reading Literacy Study (PIRLS), 2016.")	
 	
 plotTitle <- c("Percentage of fourth-grade students reaching the ePIRLS \ninternational benchmarks in online informational reading, \nby education system: 2016")	
-############################################### Slide 20	
+############################################### Slide 16	
 # Create a static plot (base plot)	
 basePlot <- ggplot(data = df, mapping = aes(x = Country, y = Percent, fill = Level)) +	
   geom_col(width = 0.7)  +	
@@ -46,8 +42,8 @@ basePlot <- ggplot(data = df, mapping = aes(x = Country, y = Percent, fill = Lev
   labs(x = "", y = "Percent", title = plotTitle, caption = plotCaption) +	
   theme_minimal()	
 basePlot	
-############################################### Slide 21	
-############################################### Slide 22	
+############################################### Slide 17	
+############################################### Slide 18	
 # Create a gganimate object	
 anim <- basePlot +	
   # set `states = Country` to reveal one stacked bar (for each jurisdiciton) at a time	
@@ -55,20 +51,22 @@ anim <- basePlot +
 	
 # View animation	
 anim	
-############################################### Slide 23	
+############################################### Slide 19	
 basePlot +	
   {{transition_states(states = ___)}}	
-############################################### Slide 24	
+df	
+############################################### Slide 20	
 basePlot +	
   {{transition_states(states = Level)}}	
-############################################### Slide 25	
+df	
+############################################### Slide 21	
 basePlot +	
   {{transition_states(states = Percent)}}	
-############################################### Slide 26	
+############################################### Slide 22	
 experiment <- basePlot +	
   transition_states(states = Percent)	
 experiment	
-############################################### Slide 27	
+############################################### Slide 23	
 # Create a gganimate object	
 anim <- anim +	
   # keep earlier frames while revealing new frames	
@@ -76,24 +74,24 @@ anim <- anim +
 	
 # View animation	
 anim	
-############################################### Slide 28	
+############################################### Slide 24	
 # use `animate` to achieve end pause	
 anim_endpause <-	
   {{animate(anim, nframes = 100, fps = 20, end_pause = 20, rewind = FALSE)}}	
 	
 # View animation	
 anim_endpause	
-############################################### Slide 29	
+############################################### Slide 25	
 # define output path	
 outputPath <- "Your output path"	
 	
 # export the animation	
 anim_save(filename = "epirls_gganimate.gif", animation = anim_endpause, path = outputPath)	
+############################################### Slide 26	
+############################################### Slide 27	
+############################################### Slide 28	
+############################################### Slide 29	
 ############################################### Slide 30	
-############################################### Slide 31	
-############################################### Slide 32	
-############################################### Slide 33	
-############################################### Slide 34	
 # Create 6 data frames that stores the bar chart in 6 "stagies"	
 df1 <- df %>% mutate(Percent = 0, df_id = "1")	
 df2 <- df1 %>% mutate(Percent = ifelse(Level %in% c("Advanced"), df$Percent, df1$Percent), df_id = "2")	
@@ -107,13 +105,13 @@ ls <- list(df1, df2, df3, df4, df5, df6)
 	
 # Inspect `ls`	
 ls	
-############################################### Slide 35	
+############################################### Slide 31	
 # Use the `tween_states` function from the `tweenr` package to interpolate data in between each state/stage	
 tf <- tween_states(ls, tweenlength= 1, statelength=0, ease='cubic-in-out', nframes=100)	
 	
 # Inspect `tf`	
 tf	
-############################################### Slide 36	
+############################################### Slide 32	
 # define where we want the animation to "pause"	
 pause_frames <- c(21, 41, 61, 81, 100)	
 	
@@ -154,8 +152,8 @@ saveGIF({
 },	
 # specify the pathway and name of the gif output, as well as the interval, width, and height	
 movie.name = paste0(outputPath,"/epirls_tweenr.gif"), interval = .02, ani.width = 600, ani.height = 400)	
-############################################### Slide 37	
-############################################### Slide 38	
+############################################### Slide 33	
+############################################### Slide 34	
 	
 # Define a function to compress any GIF file	
 # sourced from https://stla.github.io/stlapblog/posts/AnimatedGifs.html	
@@ -170,3 +168,7 @@ gif_compress <- function(ingif, outgif, show=TRUE, extra.opts=""){
 gif_compress(ingif = "Path/to/the/input/gif/file/timss_tweenr.gif",	
              outgif = "Path/to/the/output/gif/file/timss_tweenr_compressed.gif",	
              extra.opts = "--colors 256")	
+############################################### Slide 35	
+############################################### Slide 36	
+############################################### Slide 37	
+############################################### Slide 38	
