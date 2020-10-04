@@ -360,7 +360,7 @@ Setting `states` to which option below could produce the following animation?
 basePlot +
   {{transition_states(states = ___)}}
 ```
-<span>a. Level</span>  <span>b. Percent</span>  <span>c. Country</span>  <span>d. df</span>
+<span>a. Level</span>      <span>b. Percent</span>      <span>c. Country</span>      <span>d. df</span>
 
 ```{r gganimate2-1, message=FALSE, eval=TRUE, echo = FALSE, warning=FALSE, results = "markup", cache = TRUE, out.height= 330}
 knitr::include_graphics("presentationFigures/epirls_gganimate_test.gif")
@@ -386,7 +386,7 @@ Setting `states` to which option below could produce the following animation?
 basePlot +
   {{transition_states(states = Level)}}
 ```
-<span style="color:#f54886; font-weight: bold">a. Level</span>  <span>b. Percent</span>  <span>c. Country</span>  <span>d. df</span>
+<span style="color:#f54886; font-weight: bold">a. Level</span>      <span>b. Percent</span>      <span>c. Country</span>      <span>d. df</span>
 
 ```{r gganimate3-1, message=FALSE, eval=TRUE, echo = FALSE, warning=FALSE, results = "markup", cache = TRUE, out.height= 330}
 knitr::include_graphics("presentationFigures/epirls_gganimate_test.gif")
