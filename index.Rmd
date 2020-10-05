@@ -299,8 +299,7 @@ Case Study - step 3 (`gganimate`)
 ]
 
 .right-code-scroll35[
-
-```{r gganimate, message=FALSE, eval=TRUE, echo = TRUE, warning=FALSE, results = "markup", cache = TRUE, out.height= 380}
+```{r gganimate, message=FALSE, eval=TRUE, echo = TRUE, warning=FALSE, results = "hide", cache = TRUE, out.height= 380}
 # Create a gganimate object
 anim <- basePlot +
   # set `states = Country` to reveal one stacked bar (for each jurisdiciton) at a time
@@ -310,6 +309,11 @@ anim <- basePlot +
 anim
 ```
 
+.pull-left[
+```{r gganimate1-1, message=FALSE, eval=TRUE, echo = FALSE, warning=FALSE, results = "markup", cache = TRUE, out.height= 330}
+knitr::include_graphics("presentationFigures/epirls_gganimate_1_c.gif")
+```
+]
 
 .pull-right[
 ```{r dataframe1-1, echo=TRUE, eval = TRUE, results = "markup"}
