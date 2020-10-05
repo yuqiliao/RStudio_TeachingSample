@@ -46,17 +46,59 @@ Outline
 ========================================================
 - How to create animated visualizations?
   - Overall steps
+
+---
+
+Outline
+========================================================
+- How to create animated visualizations?
+  - Overall steps
   - Easier approach (`gganimate`)
-  - Customized approach (`tweenr` + `animation`, next lesson)
-- When to create animated visualizations? (next lesson)
+
 
 .pull-left[
 ```{r ex1, echo=FALSE, out.width=350, out.height=250}
 knitr::include_graphics('presentationFigures/epirls_gganimate_c.gif')
 ```
 ]
+
+---
+
+Outline
+========================================================
+- How to create animated visualizations?
+  - Overall steps
+  - Easier approach (`gganimate`)
+  - Customized approach (`tweenr` + `animation`, next lesson)
+  
+.pull-left[
+```{r ex1-1, echo=FALSE, out.width=350, out.height=250}
+knitr::include_graphics('presentationFigures/epirls_gganimate_c.gif')
+```
+]
 .pull-right[
-```{r ex2, echo=FALSE, out.width=350, out.height=250}
+```{r ex2-1, echo=FALSE, out.width=350, out.height=250}
+knitr::include_graphics('presentationFigures/epirls_tweenr_c.gif')
+```
+]
+
+---
+
+Outline
+========================================================
+- How to create animated visualizations?
+  - Overall steps
+  - Easier approach (`gganimate`)
+  - Customized approach (`tweenr` + `animation`, next lesson)
+- When to create animated visualizations? (next lesson)
+
+.pull-left[
+```{r ex3-1, echo=FALSE, out.width=350, out.height=250}
+knitr::include_graphics('presentationFigures/epirls_gganimate_c.gif')
+```
+]
+.pull-right[
+```{r ex4-1, echo=FALSE, out.width=350, out.height=250}
 knitr::include_graphics('presentationFigures/epirls_tweenr_c.gif')
 ```
 ]
@@ -116,7 +158,6 @@ How? - Overall steps
 1. Import and process data into tidy format
 2. Create a static plot (usually the last frame)
 3. Make it move!
-  - 3.1. Interpolate data by frame
 
 ---
 How? - Overall steps
@@ -124,8 +165,6 @@ How? - Overall steps
 1. Import and process data into tidy format
 2. Create a static plot (usually the last frame)
 3. Make it move!
-  - 3.1. Interpolate data by frame
-  - 3.2. Draw, append, and export each frame
 
 ---
 How? - Overall steps
@@ -133,8 +172,6 @@ How? - Overall steps
 1. Import and process data into tidy format
 2. Create a static plot (usually the last frame)
 3. Make it move! &#8594; `gganimate`
-  - 3.1. Interpolate data by frame
-  - 3.2. Draw, append, and export each frame
 
 ---
 How? - Overall steps
@@ -142,8 +179,6 @@ How? - Overall steps
 1. Import and process data into tidy format
 2. Create a static plot (usually the last frame)
 3. Make it move! &#8594; `gganimate`
-  - 3.1. Interpolate data by frame &#8594; `tweenr`
-  - 3.2. Draw, append, and export each frame &#8594; `animation`
 
 ---
 How? - Case Study
