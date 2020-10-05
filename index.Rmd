@@ -390,7 +390,17 @@ What happens if `states = Percent`?
 basePlot +
   {{transition_states(states = Percent)}}
 ```
-![](presentationFigures/liveCoding.gif)
+.pull-left[
+```{r gganimate4-1, message=FALSE, eval=TRUE, echo = FALSE, warning=FALSE, results = "markup", cache = TRUE, out.height= 330}
+knitr::include_graphics("presentationFigures/liveCoding.gif")
+```
+]
+
+.pull-right[
+```{r dataframe4-1, echo=TRUE, eval = TRUE, results = "markup"}
+df
+```
+]
 ]
 
 ---
@@ -410,11 +420,19 @@ Explore further on `transition_states()`.
 What happens if `states = Percent`?
 <br>
 `gganimate` does not yet support revealing each level of a stacked bar plot
+.pull-left[
 ```{r gganimate6, message=FALSE, eval=TRUE, echo = TRUE, warning=FALSE, results = "markup", cache = TRUE, out.height= 330}
 experiment <- basePlot +
   transition_states(states = Percent)
 experiment
 ```
+]
+
+.pull-right[
+```{r dataframe5-1, echo=TRUE, eval = TRUE, results = "markup"}
+df
+```
+]
 ]
 
 ---

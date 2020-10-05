@@ -62,10 +62,12 @@ df
 ############################################### Slide 21	
 basePlot +	
   {{transition_states(states = Percent)}}	
+df	
 ############################################### Slide 22	
 experiment <- basePlot +	
   transition_states(states = Percent)	
 experiment	
+df	
 ############################################### Slide 23	
 # Create a gganimate object	
 anim <- anim +	
