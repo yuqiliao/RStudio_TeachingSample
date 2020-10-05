@@ -299,7 +299,7 @@ Case Study - step 3 (`gganimate`)
 ]
 
 .right-code-scroll35[
-.pull-left[
+
 ```{r gganimate, message=FALSE, eval=TRUE, echo = TRUE, warning=FALSE, results = "markup", cache = TRUE, out.height= 380}
 # Create a gganimate object
 anim <- basePlot +
@@ -309,7 +309,7 @@ anim <- basePlot +
 # View animation
 anim
 ```
-]
+
 
 .pull-right[
 ```{r dataframe1-1, echo=TRUE, eval = TRUE, results = "markup"}
