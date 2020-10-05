@@ -150,29 +150,6 @@ How? - Overall steps
 2. Create a static plot (usually the last frame)
 3. Make it move!
 
-
----
-How? - Overall steps
-========================================================
-
-1. Import and process data into tidy format
-2. Create a static plot (usually the last frame)
-3. Make it move!
-
----
-How? - Overall steps
-========================================================
-1. Import and process data into tidy format
-2. Create a static plot (usually the last frame)
-3. Make it move!
-
----
-How? - Overall steps
-========================================================
-1. Import and process data into tidy format
-2. Create a static plot (usually the last frame)
-3. Make it move! &#8594; `gganimate`
-
 ---
 How? - Overall steps
 ========================================================
