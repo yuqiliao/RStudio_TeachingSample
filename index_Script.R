@@ -51,6 +51,7 @@ anim <- basePlot +
 	
 # View animation	
 anim	
+df	
 ############################################### Slide 19	
 basePlot +	
   {{transition_states(states = ___)}}	
