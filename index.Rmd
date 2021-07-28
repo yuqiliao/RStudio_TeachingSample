@@ -299,7 +299,7 @@ Case Study - step 3 (`gganimate`)
 ]
 
 .right-code-scroll35[
-```{r gganimate, message=FALSE, eval=TRUE, echo = TRUE, warning=FALSE, results = "hide", cache = TRUE, out.height= 380}
+```{r gganimate, message=FALSE, eval=FALSE, echo = TRUE, warning=FALSE, results = "hide", cache = FALSE, out.height= 380}
 # Create a gganimate object
 anim <- basePlot +
   # set `states = Country` to reveal one stacked bar (for each jurisdiciton) at a time
@@ -445,10 +445,13 @@ What happens if `states = Percent`?
 <br>
 `gganimate` does not yet support revealing each level of a stacked bar plot
 .pull-left[
-```{r gganimate6, message=FALSE, eval=TRUE, echo = TRUE, warning=FALSE, results = "markup", cache = TRUE, out.height= 330}
+```{r gganimate6, message=FALSE, eval=FALSE, echo = TRUE, warning=FALSE, results = "markup", cache = FALSE, out.height= 330}
 experiment <- basePlot +
   transition_states(states = Percent)
 experiment
+```
+```{r gganimate6-1, message=FALSE, eval=TRUE, echo = FALSE, warning=FALSE, results = "markup", cache = TRUE, out.height= 330}
+knitr::include_graphics("presentationFigures/gganimate6-1-min.gif")
 ```
 ]
 
@@ -472,7 +475,7 @@ Case Study - step 3 (`gganimate`)
 ]
 
 .right-code-scroll35[
-```{r gganimate7, message=FALSE, eval=TRUE, echo = TRUE, warning=FALSE, results = "markup", cache = TRUE, out.height= 380}
+```{r gganimate7, message=FALSE, eval=FALSE, echo = TRUE, warning=FALSE, results = "markup", cache = FALSE, out.height= 380}
 # Create a gganimate object
 anim <- anim +
   # keep earlier frames while revealing new frames
@@ -480,6 +483,9 @@ anim <- anim +
 
 # View animation
 anim
+```
+```{r gganimate7-1, message=FALSE, eval=TRUE, echo = FALSE, warning=FALSE, results = "markup", cache = TRUE, out.height= 330}
+knitr::include_graphics("presentationFigures/gganimate7-1-min.gif")
 ```
 ]
 
@@ -497,13 +503,16 @@ Case Study - step 3 (`gganimate`)
 ]
 
 .right-code-scroll35[
-```{r gganimate10, message=FALSE, eval=TRUE, echo = TRUE, warning=FALSE, results = "markup", cache = TRUE, out.height= 380}
+```{r gganimate10, message=FALSE, eval=FALSE, echo = TRUE, warning=FALSE, results = "markup", cache = FALSE, out.height= 380}
 # use `animate` to achieve end pause
 anim_endpause <-
   {{animate(anim, nframes = 100, fps = 20, end_pause = 20, rewind = FALSE)}}
 
 # View animation
 anim_endpause
+```
+```{r gganimate10-1, message=FALSE, eval=TRUE, echo = FALSE, warning=FALSE, results = "markup", cache = TRUE, out.height= 330}
+knitr::include_graphics("presentationFigures/gganimate10-1-min.gif")
 ```
 ]
 
